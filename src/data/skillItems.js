@@ -31,6 +31,21 @@ export const skillItems = [
     desc: "Unit Testing",
   },
   {
+    imgSrc: "/images/nodejs.svg",
+    label: "Node.js",
+    desc: "Runtime Environment",
+  },
+  {
+    imgSrc: "/images/express.svg",
+    label: "Express",
+    desc: "Web Framework",
+  },
+  {
+    imgSrc: "/images/mongodb.svg",
+    label: "MongoDB",
+    desc: "NoSQL Database",
+  },
+  {
     imgSrc: "/images/firebase.svg",
     label: "Firebase",
     desc: "Database",

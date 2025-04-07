@@ -7,20 +7,19 @@ export const certificationItems = [
       "https://www.coursera.org/account/accomplishments/records/7EAMWRR4WPVC",
   },
   {
+    certificationName: "React: Hooks and MERN",
+    certificationImgSrc: "/images/udemy.svg",
+    certificationUrl:
+      "https://www.udemy.com/certificate/UC-6ecc630c-5feb-4528-872b-66bc8be17d24/",
+    certificationCompany: "Udemy",
+  },
+  {
     certificationName:
       "Master in JavaScript: Learn JS, jQuery, Angular, NodeJS",
     certificationImgSrc: "/images/udemy.svg",
     certificationUrl:
       "https://www.udemy.com/certificate/UC-be42da35-ae9d-4f0e-8559-224d4dc38e3e/",
     certificationCompany: "Udemy",
-  },
-  {
-    certificationName:
-      "Advanced JavaScript",
-    certificationImgSrc: "/images/scrimba.svg",
-    certificationUrl:
-      "https://www.coursera.org/account/accomplishments/verify/X645YPW2S9XO",
-    certificationCompany: "Scrimba",
   },
   {
     certificationName: "Modern JavaScript: A Guide to domain the language.",
@@ -37,7 +36,6 @@ export const certificationItems = [
       "https://www.udemy.com/certificate/UC-9861980c-78b4-4c4e-8800-7e799c3eccea/",
     certificationCompany: "Udemy",
   },
-
 
   // {
   //   certificationName: "React: Hooks and MERN - From Zero to Expert ",

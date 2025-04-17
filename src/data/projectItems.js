@@ -1,5 +1,13 @@
 export const projectItems = [
   {
+    imgSrc: "/images/journalmock.png",
+    title: "Journal App",
+    tags: ["React", "Material UI", "Firebase", "JavaScript"],
+    description:
+      "Implemented a comprehensive CRUD functionality within a Journal app. Integrated Firebase for real-time data management and Cloudinary for media handling, ensuring a seamless experience. ",
+    projectLink: "https://journalapp-tomasorpa.vercel.app/",
+  },
+  {
     imgSrc: "/images/calendarmock.png",
     title: "Calendar App",
     tags: ["MongoDb", "Express", "React", "Node.js"],
@@ -14,13 +22,5 @@ export const projectItems = [
     description:
       "A Google Translator clone using an AI-powered API that detects any language and translates it to Spanish, English, or French. This project enhanced my ability to work with AI APIs, providing me with valuable insights into modern technological advancements. ",
     projectLink: "https://translator-clone-3s2b.onrender.com/",
-  },
-  {
-    imgSrc: "/images/journalmock.png",
-    title: "Journal App",
-    tags: ["React", "Material UI", "Firebase", "JavaScript"],
-    description:
-      "Implemented a comprehensive CRUD functionality within a Journal app. Integrated Firebase for real-time data management and Cloudinary for media handling, ensuring a seamless experience. ",
-    projectLink: "https://journalapp-tomasorpa.vercel.app/",
   },
 ];

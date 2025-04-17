@@ -36,7 +36,7 @@ const Header = () => {
           href="#contact"
           className="btn btn-secondary max-md:hidden md:justify-self-end hover:bg-purple-300 active:bg-purple-400"
         >
-          Contact Me
+          Contact
         </a>
       </div>
     </header>

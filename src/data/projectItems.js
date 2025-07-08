@@ -21,7 +21,7 @@ export const projectItems = [
     tags: ["React", "TypeScript", "Node.js", "Express"],
     description:
       "A Google Translator clone using an AI-powered API that detects any language and translates it to Spanish, English, or French. This project enhanced my ability to work with AI APIs, providing me with valuable insights into modern technological advancements. ",
-    projectLink: "https://translator-clone-3s2b.onrender.com/",
+    projectLink: "https://03-translator-backend.vercel.app/",
   },
   {
     imgSrc: "/images/petwebsitemock.png",

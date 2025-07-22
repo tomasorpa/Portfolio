@@ -2,7 +2,7 @@
 export const aboutItems = [
   {
     label: "Certifications Done",
-    number: 10,
+    number: 14,
   },
   {
     label: "Projects Done",

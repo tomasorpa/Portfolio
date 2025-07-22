@@ -13,7 +13,7 @@ export const projectItems = [
     tags: ["MongoDb", "Express", "React", "Node.js"],
     description:
       "A MERN stack calendar app designed to help teams coordinate events. It provides users with efficient event management through real-time updates and user-friendly interfaces. Ideal for small businesses.",
-    projectLink: "https://calendar-app-api-hnj4.onrender.com/",
+    projectLink: "https://04-calendar-backend.vercel.app/",
   },
   {
     imgSrc: "/images/translatormock.png",

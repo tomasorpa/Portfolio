@@ -1,5 +1,5 @@
 import { ButtonPrimary, ButtonOutline } from "./Button";
-import resume from "../../public/resume/Tomas Ortega - Junior Position - Resume.pdf";
+import resume from "../../public/resume/Tomas Ortega - Software Developer - Resume.pdf";
 
 const Hero = () => {
   return (

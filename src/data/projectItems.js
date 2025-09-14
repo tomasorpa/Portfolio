@@ -5,7 +5,7 @@ export const projectItems = [
     tags: ["MongoDb", "Express", "React", "Node.js"],
     description:
       "Developed a full-featured Expense Tracker application with an intuitive user interface and robust backend integration. Implemented real-time expense management, user authentication, and reliable data persistence.",
-    projectLink: "https://journalapp-tomasorpa.vercel.app/",
+    projectLink: "https://expense-tracker-backend-kohl-ten.vercel.app/login",
   },
   {
     imgSrc: "/images/journalmock.png",

@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({
   imgSrc,
@@ -7,11 +8,13 @@ const ProjectCard = ({
   projectLink,
   classes,
   description,
+  idSlug,
 }) => {
   return (
-    <div
+    <Link
+      to={`/project/${idSlug}`}
       className={
-        "relative p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5 transition-colors " +
+        "cursor-pointer relative z-0 p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5 transition-colors " +
         classes
       }
     >
@@ -36,16 +39,24 @@ const ProjectCard = ({
           </div>
         </div>
 
-        {/* Flecha siempre en la parte inferior derecha */}
+        {/* ícono que abre enlace externo */}
         <div className="w-11 h-11 rounded-lg grid place-items-center bg-violet-400 text-zinc-950 self-end shrink-0 hover:text-neutral">
-          <span className="material-symbols-rounded " aria-hidden="true">
-            arrow_outward
+          <span
+            className="material-symbols-rounded hover:text-white relative"
+            aria-hidden="true"
+          >
+            <a
+              href={projectLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()} // evita abrir el Link principal
+            >
+              arrow_outward
+            </a>
           </span>
         </div>
       </div>
-
-      <a href={projectLink} target="_blank" className="absolute inset-0"></a>
-    </div>
+    </Link>
   );
 };
 
@@ -56,6 +67,7 @@ ProjectCard.propTypes = {
   projectLink: PropTypes.string,
   classes: PropTypes.string,
   description: PropTypes.string,
+  idSlug: PropTypes.string,
 };
 
 export default ProjectCard;

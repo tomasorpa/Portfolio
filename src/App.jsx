@@ -10,6 +10,9 @@ import Project from "./components/Project";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Certification from "./components/Certification";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes/app.router";
+import { useScrollToHash } from "./hooks/useScrollToHash";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const App = () => {
@@ -34,16 +37,18 @@ const App = () => {
 
   return (
     <ReactLenis root>
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Skill />
-        <Project />
-        <Certification />
-        <Contact />
-      </main>
-      <Footer />
+      <RouterProvider router={router}>
+        <Header />
+        <main>
+          <Hero />
+          <About />
+          <Skill />
+          <Project />
+          <Certification />
+          <Contact />
+        </main>
+        <Footer />
+      </RouterProvider>
     </ReactLenis>
   );
 };

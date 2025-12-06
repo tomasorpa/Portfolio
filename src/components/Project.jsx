@@ -1,7 +1,8 @@
 import { useSearchParams } from "react-router-dom";
 import { Pagination } from "./Pagination";
-import ProjectCard from "./ProjectCard";
 import { filteredProjectItems } from "../data";
+import { ProjectCard } from "../portfolio/components/ProjectCard";
+import { FilterSidebar } from "../portfolio/components/FilterSidebar";
 
 const Project = () => {
   const [searchParams] = useSearchParams();
@@ -14,7 +15,6 @@ const Project = () => {
     <section id="project" className="section">
       <div className="container">
         <h2 className="headline-2 mb-8 reveal-up">My portfolio highlights</h2>
-
         <div className="grid gap-x-10 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(340px,1fr))] mb-10">
           {projectItems.map(
             (

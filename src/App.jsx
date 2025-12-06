@@ -13,6 +13,7 @@ import Certification from "./components/Certification";
 import { RouterProvider } from "react-router-dom";
 import { router } from "./routes/app.router";
 import { useScrollToHash } from "./hooks/useScrollToHash";
+import ScrollToTop from "./components/ScrollToTop";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 const App = () => {

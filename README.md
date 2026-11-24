@@ -1,8 +1,26 @@
-# React + Vite
+# Tomas Ortega Palencia | Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + Vite. Diseño DeveloperOS™ con acento naranja Claude (`#c15f3c` / `#d97757`).
 
-Currently, two official plugins are available:
+## Correr en local
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+npm run dev
+```
+
+## Deploy en Vercel
+
+Vercel detecta Vite solo: Build `npm run build`, Output `dist`.
+
+## Estructura
+
+- `src/Portfolio.jsx`: la página completa: datos (`SKILLS`, `PROJECTS`), estado y lógica (filtro de skills, case studies, menú móvil, animaciones) y el JSX.
+- `src/ds.jsx`: componentes del design system: `Button`, `Tag`, `Icon`.
+- `src/styles.css`: tokens (colores, tipografía, espaciado), fuentes y estados hover/focus.
+- `public/assets/`: imágenes, íconos, CV y transcript en PDF.
+- `public/fonts/`: Montserrat, Poppins, JetBrains Mono (woff2, servidas localmente).
+
+## Cambiar el color de acento
+
+Los colores del acento están en `src/styles.css` (`--primary`, `--primary-hover`, `--primary-light`, `--acc-rgb`). La prop `accent` de `<Portfolio />` también acepta `"blue"`, `"purple"` o `"canada-red"`.

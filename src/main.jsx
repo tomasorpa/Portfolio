@@ -1,16 +1,10 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './styles.css';
+import Portfolio from './Portfolio.jsx';
 
-import App from "./App.jsx";
-
-/**
- * CSS link
- */
-import "./index.css";
-import "lenis/dist/lenis.css";
-
-createRoot(document.getElementById("root")).render(
+createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <Portfolio />
   </StrictMode>
 );

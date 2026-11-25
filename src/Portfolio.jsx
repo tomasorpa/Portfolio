@@ -248,10 +248,8 @@ export default class Portfolio extends React.Component {
       <div className="dos-shell" style={{minHeight: "100vh", background: "radial-gradient(900px 600px at 85% -5%, rgba(var(--acc-rgb), 0.10), transparent 70%), radial-gradient(800px 600px at 0% 100%, rgba(var(--acc-rgb), 0.05), transparent 70%), var(--page-bg)", backgroundAttachment: "fixed", color: "var(--text)", fontFamily: "var(--font-body)"}}>
         <header style={{position: "sticky", top: "0", zIndex: "10", background: "#0a0c10", borderBottom: "1px solid var(--border)"}}>
           <nav style={{maxWidth: "1080px", margin: "0 auto", padding: "0 clamp(16px, 4vw, 24px)", minHeight: "60px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "24px"}}>
-            <a href="#top" style={{fontFamily: "var(--font-title)", fontWeight: "700", fontSize: "17px", letterSpacing: "-0.01em", color: "var(--text-strong)", whiteSpace: "nowrap", flex: "none", display: "flex", alignItems: "center", gap: "8px"}}>
-              <span>
-                {"Tomas Ortega"}
-              </span>
+            <a href="#top" aria-label="Tomas Ortega Palencia, back to top" style={{flex: "none", display: "flex", alignItems: "center"}}>
+              <img src="/assets/TOP-icon-blanco.webp" alt="" width="40" height="40" style={{display: "block", width: "40px", height: "40px"}} />
             </a>
             <div style={{display: "flex", alignItems: "center", gap: "clamp(10px, 3vw, 28px)", justifyContent: "flex-end", minWidth: "0", flexShrink: "1"}}>
               {(v.isWide) ? (<>
@@ -1107,7 +1105,7 @@ export default class Portfolio extends React.Component {
               {"Where I learned."}
             </h2>
             <div style={{display: "grid", gridTemplateColumns: "minmax(0, 1fr)", gap: "18px"}}>
-              <div style={{background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "20px", boxShadow: "var(--shadow)", padding: "28px", display: "flex", flexDirection: "column", gap: "20px"}}>
+              <div className="edu-card" style={{background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "20px", boxShadow: "var(--shadow)", padding: "28px", display: "flex", flexDirection: "column", gap: "20px"}}>
                 <div style={{display: "flex", alignItems: "center", gap: "14px"}}>
                   <span style={{width: "34px", height: "34px", flex: "none", borderRadius: "9px", background: "rgba(var(--acc-rgb), 0.16)", color: "var(--primary-light)", display: "inline-flex", alignItems: "center", justifyContent: "center"}}>
                     <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -1166,7 +1164,7 @@ export default class Portfolio extends React.Component {
                 </div>
               </div>
             </div>
-            <div style={{marginTop: "18px", background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "20px", boxShadow: "var(--shadow)", padding: "28px", display: "flex", flexDirection: "column", gap: "20px"}}>
+            <div className="edu-card" style={{marginTop: "18px", background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "20px", boxShadow: "var(--shadow)", padding: "28px", display: "flex", flexDirection: "column", gap: "20px"}}>
               <div style={{display: "flex", alignItems: "center", justifyContent: "space-between", gap: "14px", flexWrap: "wrap"}}>
                 <div style={{display: "flex", alignItems: "center", gap: "14px"}}>
                   <span style={{width: "34px", height: "34px", flex: "none", borderRadius: "9px", background: "rgba(var(--acc-rgb), 0.16)", color: "var(--primary-light)", display: "inline-flex", alignItems: "center", justifyContent: "center"}}>
@@ -1184,23 +1182,23 @@ export default class Portfolio extends React.Component {
                 </Tag>
               </div>
               <div style={{display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "12px"}}>
-                <div style={{display: "inline-flex", flex: "0 0 auto", alignItems: "center", gap: "12px", padding: "14px 20px", borderRadius: "12px", background: "rgba(255,255,255,0.03)", border: "1px solid var(--border)", fontSize: "15px", fontWeight: "500", color: "var(--label)", whiteSpace: "nowrap"}}>
+                <div className="cert-chip" style={{display: "inline-flex", flex: "0 0 auto", alignItems: "center", gap: "12px", padding: "14px 20px", borderRadius: "12px", background: "rgba(255,255,255,0.03)", border: "1px solid var(--border)", fontSize: "15px", fontWeight: "500", color: "var(--label)", whiteSpace: "nowrap"}}>
                   <img src="/assets/f6bfedb8-5cc3-428c-baa4-75b9915dd5bb.svg" alt="" style={{width: "22px", height: "22px", display: "block", flex: "none"}} />
                   {"LinkedIn Learning"}
                 </div>
-                <div style={{display: "inline-flex", flex: "0 0 auto", alignItems: "center", gap: "12px", padding: "14px 20px", borderRadius: "12px", background: "rgba(255,255,255,0.03)", border: "1px solid var(--border)", fontSize: "15px", fontWeight: "500", color: "var(--label)", whiteSpace: "nowrap"}}>
+                <div className="cert-chip" style={{display: "inline-flex", flex: "0 0 auto", alignItems: "center", gap: "12px", padding: "14px 20px", borderRadius: "12px", background: "rgba(255,255,255,0.03)", border: "1px solid var(--border)", fontSize: "15px", fontWeight: "500", color: "var(--label)", whiteSpace: "nowrap"}}>
                   <img src="/assets/a4d03dde-2744-4dde-99c4-d5787e9d279a.svg" alt="" style={{width: "22px", height: "22px", display: "block", flex: "none"}} />
                   {"Udemy"}
                 </div>
-                <div style={{display: "inline-flex", flex: "0 0 auto", alignItems: "center", gap: "12px", padding: "14px 20px", borderRadius: "12px", background: "rgba(255,255,255,0.03)", border: "1px solid var(--border)", fontSize: "15px", fontWeight: "500", color: "var(--label)", whiteSpace: "nowrap"}}>
+                <div className="cert-chip" style={{display: "inline-flex", flex: "0 0 auto", alignItems: "center", gap: "12px", padding: "14px 20px", borderRadius: "12px", background: "rgba(255,255,255,0.03)", border: "1px solid var(--border)", fontSize: "15px", fontWeight: "500", color: "var(--label)", whiteSpace: "nowrap"}}>
                   <img src="/assets/c5140354-d0a8-4d73-b632-b70a499f6fc8.svg" alt="" style={{width: "22px", height: "22px", display: "block", flex: "none"}} />
                   {"Coursera"}
                 </div>
-                <div style={{display: "inline-flex", flex: "0 0 auto", alignItems: "center", gap: "12px", padding: "14px 20px", borderRadius: "12px", background: "rgba(255,255,255,0.03)", border: "1px solid var(--border)", fontSize: "15px", fontWeight: "500", color: "var(--label)", whiteSpace: "nowrap"}}>
+                <div className="cert-chip" style={{display: "inline-flex", flex: "0 0 auto", alignItems: "center", gap: "12px", padding: "14px 20px", borderRadius: "12px", background: "rgba(255,255,255,0.03)", border: "1px solid var(--border)", fontSize: "15px", fontWeight: "500", color: "var(--label)", whiteSpace: "nowrap"}}>
                   <img src="/assets/1f317fe4-4bdb-427b-a28a-2f7e75c0d34d.svg" alt="" style={{width: "22px", height: "22px", display: "block", flex: "none"}} />
                   {"Meta"}
                 </div>
-                <div style={{display: "inline-flex", flex: "0 0 auto", alignItems: "center", gap: "12px", padding: "14px 20px", borderRadius: "12px", background: "rgba(255,255,255,0.03)", border: "1px solid var(--border)", fontSize: "15px", fontWeight: "500", color: "var(--label)", whiteSpace: "nowrap"}}>
+                <div className="cert-chip" style={{display: "inline-flex", flex: "0 0 auto", alignItems: "center", gap: "12px", padding: "14px 20px", borderRadius: "12px", background: "rgba(255,255,255,0.03)", border: "1px solid var(--border)", fontSize: "15px", fontWeight: "500", color: "var(--label)", whiteSpace: "nowrap"}}>
                   <img src="/assets/9b09fd47-0631-4813-9dc4-f119043b9836.svg" alt="" style={{width: "22px", height: "22px", display: "block", flex: "none"}} />
                   {"Anthropic"}
                 </div>
